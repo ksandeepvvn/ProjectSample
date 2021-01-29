@@ -38,7 +38,7 @@ class ResponseDisplayViewController: UIViewController {
                 self.orgEmailID.text = "Email     :  " + (data?.data?.cc_email)!
                 self.orgName.text = "Org Name     :  " + (data?.data?.org_name)!
                 self.titleOrg.text = "Title       :  " + (data?.data?.title)!
-                self.userId.text = "UserID        :   " + "\(String(describing: data?.data?.user_id))"
+                self.userId.text = "UserID        :   " + "\(data?.data?.user_id ?? 0)"
                 
             }
         }
